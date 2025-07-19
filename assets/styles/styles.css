@@ -1,11 +1,61 @@
-header {
-    background-color: lightblue;
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+
+/* General styles for the body of page */
+* {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Styles for the header & nav bar */
+header {
+    width: 100vw;
+    height: 50px;
+    background-color: #000000;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    /* padding-left: 20px; */
+}
+
+#nav-bar ul a {
+    list-style-type: none;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+
+#book-now-btn {
+    /* padding: 5px 5px 5px 5px; */
+    background-color: #22eb1e;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+/* Styles for main content */
 main {
     background-color: lightgreen;
+    margin-top: 50px;
 }
 
+/* Styles for the footer */
 footer {
     background-color: lightpink;
 }
