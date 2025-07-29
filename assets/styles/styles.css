@@ -41,7 +41,7 @@ header {
 /* styles for pop out navbar */
 
 nav {
-    position: absolute;
+    position: fixed;
     display: none;
     right: 0px;
     top: 100px;
@@ -59,8 +59,6 @@ nav a {
     color: #000;
     font-family: "Roboto", sans-serif;
     font-size: 2em;
-    border-top: 2px solid lightgreen;
-    border-bottom: 2px solid lightgreen;
 }
 
 nav li {
@@ -82,4 +80,33 @@ nav li {
 
 /* media queries */
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    /* header and navbar media queries */
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    nav {
+        position: relative;
+        display: block;
+        box-shadow: none;
+        border: none;
+        width: fit-content;
+        top: 70px;
+        right: 20px;
+    }
+
+    nav li {
+        display: inline-block;
+        padding: 10px;
+    }
+
+    nav a:hover {
+        border-top: 2px solid #000;
+        border-bottom: 2px solid #000;
+        transition: 0.7ms;
+    }
+}
+
+@media screen and (min-width: 1440px) {}
