@@ -79,3 +79,7 @@ nav li {
 #nav-toggle:checked~nav {
     display: block;
 }
+
+/* media queries */
+
+@media screen and (min-width: 768px) {}
