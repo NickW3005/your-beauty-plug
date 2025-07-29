@@ -6,6 +6,11 @@
     margin: 0;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 h1,
 h2,
 h3 {
@@ -21,13 +26,13 @@ a {
 /* styles for logo and nav bar */
 
 header {
+    position: relative;
     width: 100vw;
     height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position: relative;
     border-bottom: 1px solid #3a3a3a;
     box-shadow: 0px 2px 5px #3a3a3a;
 }
@@ -41,8 +46,9 @@ header {
 /* styles for pop out navbar */
 
 nav {
-    position: fixed;
+    position: absolute;
     display: none;
+    background-color: #ffffff;
     right: 0px;
     top: 100px;
     width: 150px;
@@ -78,6 +84,44 @@ nav li {
     display: block;
 }
 
+/* styles for main content */
+
+#about-section {
+    width: 100vw;
+    height: 600px;
+    background: url(assets/images/hero-banner-small.png) center no-repeat;
+}
+
+#break-banner {
+    width: 100vw;
+    height: 100px;
+    text-align: center;
+    border: 1px solid #3a3a3a;
+    box-shadow: 0px 0px 5px #3a3a3a;
+}
+
+#break-banner h1 {
+    color: #31633e;
+    margin-top: 20px;
+    font-size: 2.5em;
+    text-shadow: -2px 2px 3px #3a3a3a;
+}
+
+#contact-section {
+    width: 100vw;
+    height: 600px;
+    box-shadow: inset 2px 2px 5px #3a3a3a;
+    background: url(assets/images/background-banner-img.png) center no-repeat;
+}
+
+footer {
+    width: 100vw;
+    height: 200px;
+    background-color: #ffffff;
+    border: 1px solid #3a3a3a;
+    box-shadow: 0px 0px 5px #3a3a3a;
+}
+
 /* media queries */
 
 @media screen and (min-width: 768px) {
@@ -89,6 +133,7 @@ nav li {
 
     nav {
         position: relative;
+        background: none;
         display: block;
         box-shadow: none;
         border: none;
@@ -106,6 +151,22 @@ nav li {
         border-top: 2px solid #000;
         border-bottom: 2px solid #000;
         transition: 0.7ms;
+    }
+
+    /* styles for main content on screen sizes 768px and up */
+
+    #about-section {
+        background: url(assets/images/hero-banner-meduim.png) center no-repeat;
+    }
+
+    #break-banner h1 {
+        margin: 0;
+        color: #31633e;
+        font-size: 5em;
+    }
+
+    #contact-section {
+        background: url(assets/images/background-banner-img-large.png) center no-repeat;
     }
 }
 
