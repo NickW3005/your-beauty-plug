@@ -89,7 +89,7 @@ nav li {
 #about-section {
     width: 100vw;
     height: 600px;
-    background: url(/assets/images/hero-banner-small.png) center no-repeat;
+    background: url(assets/images/hero-banner-small.png) center no-repeat;
 }
 
 #break-banner {
