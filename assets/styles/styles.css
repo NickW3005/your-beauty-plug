@@ -128,8 +128,24 @@ nav li {
 #contact-section {
     width: 100vw;
     height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     box-shadow: inset 2px 2px 5px #3a3a3a;
     background: url(/assets/images/background-banner-img.png) center no-repeat;
+}
+
+form {
+    width: 300px;
+    height: 500px;
+    margin: 10px;
+    box-shadow: 2px 2px 5px #3a3a3a;
+    background-color: #ffffff;
+    opacity: 0.5;
+}
+
+#contact-form label {
+    font-family: "Roboto", sans-serif;
 }
 
 /* styles for footer */
