@@ -96,14 +96,14 @@ nav li {
     align-items: center;
     width: 100vw;
     height: 600px;
-    background: url(/assets/images/hero-banner-small.png) center no-repeat;
+    background: url(assets/images/hero-banner-small.png) center no-repeat;
 }
 
 #about-img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background: url(/assets/images/charlotte-beautition.jpg) center;
+    background: url(assets/images/charlotte-beautition.jpg) center;
 }
 
 #about {
@@ -251,7 +251,7 @@ td {
     /* styles for main content on screen sizes 768px and up */
 
     #about-section {
-        background: url(/assets/images/hero-banner-meduim.png) center no-repeat;
+        background: url(assets/images/hero-banner-meduim.png) center no-repeat;
         justify-content: center;
     }
 
